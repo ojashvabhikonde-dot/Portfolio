@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,15 @@
 
 @layer base {
   body {
-    @apply bg-background text-white antialiased overflow-x-hidden;
+    background-color: #030308;
+    color: #afafba;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #f1f1f5;
+    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -15,12 +23,73 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #030308;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #222230;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #8c66ff;
+}
+
+/* Reference Blob Animation */
+@keyframes animateBlob {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.blob-animate {
+  position: absolute;
+  background: linear-gradient(180deg, #8c66ff 20%, #743dff 60%, rgba(140, 102, 255, 0.2) 100%);
+  border-radius: 50%;
+  filter: blur(55px);
+  animation: animateBlob 7s linear infinite;
+  pointer-events: none;
+}
+
+/* Button style identical to reference */
+.btn-panda {
+  background-color: #030308;
+  border: 2px solid #8c66ff;
+  color: #f1f1f5;
+  padding: 0.9rem 2.2rem;
+  box-shadow: 0 8px 32px rgba(140, 102, 255, 0.45), inset 8px -8px 25px rgba(116, 61, 255, 0.4);
+  border-radius: 4rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-panda:hover {
+  box-shadow: 0 12px 42px rgba(140, 102, 255, 0.7), inset 8px -8px 30px rgba(116, 61, 255, 0.6);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* Floating Action Button on Project Card (from reference) */
+.projects__button {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #030308;
+  border: 2px solid #8c66ff;
+  color: #8c66ff;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.projects__button:hover {
+  background-color: #8c66ff;
+  color: #ffffff;
+  box-shadow: 0 0 30px #8c66ff;
+  transform: scale(1.08);
 }

@@ -2,13 +2,16 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-white/10 bg-background text-center">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Ojashva Bhikonde. All rights reserved.
-        </p>
-        <div className="text-sm text-gray-500">
-          Designed & Built with React, Tailwind & Three.js
+    <footer className="py-12 border-t border-white/5 bg-[#030308] relative overflow-hidden">
+      <div className="blob-animate w-40 h-40 -bottom-10 left-1/2 -translate-x-1/2 opacity-20"></div>
+
+      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10 text-xs sm:text-sm text-bodyText">
+        <div>
+          All Rights Reserved By <span className="text-white font-semibold">Ojashva Bhikonde</span>
+        </div>
+
+        <div>
+          &#169; <span>{new Date().getFullYear()}</span>
         </div>
       </div>
     </footer>

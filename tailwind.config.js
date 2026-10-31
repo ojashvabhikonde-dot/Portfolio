@@ -7,12 +7,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#0a0a0a',
-        primary: '#4f46e5', // Indigo 600
-        secondary: '#06b6d4', // Cyan 500
+        background: '#030308',
+        container: '#0e0e14',
+        primary: {
+          DEFAULT: '#8c66ff',
+          hover: '#743dff',
+          light: '#b399ff',
+          dark: '#581ed6',
+        },
+        bodyText: '#afafba',
+        titleText: '#f1f1f5',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Poppins', 'Inter', 'sans-serif'],
+      },
+      boxShadow: {
+        'glow': '0 8px 32px rgba(140, 102, 255, 0.45)',
+        'btn-glow': '0 8px 32px rgba(140, 102, 255, 0.5), inset 8px -8px 30px #581ed6',
+        'purple-card': '0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(140, 102, 255, 0.15)',
       }
     },
   },

@@ -1,16 +1,46 @@
-# React + Vite
+# Modern 3D Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive developer portfolio for **Ojashva Bhikonde**, built with React 19, Three.js 3D canvas, Tailwind CSS, Framer Motion, and dynamic GitHub integration.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **🌐 Dynamic GitHub Synchronization**: Automatically fetches public repositories in real-time from [`@ojashvabhikonde-dot`](https://github.com/ojashvabhikonde-dot) via the GitHub REST API.
+- **🔗 Automatic Live Demo Detection**:
+  - Automatically identifies live demo links (from repository `homepage` or verified deployments like Vercel).
+  - Highlights available live demos with a vibrant "Live Demo" button and pulsing status pill.
+  - Gracefully displays "View Source Code" for repositories without a live site.
+- **🎯 Categorization & Instant Search**:
+  - Filter by **All Repositories**, **Live Demos Only**, **Featured**, **AI & 3D Twin**, or **Web Apps & UI**.
+  - Real-time search across titles, descriptions, repository names, and programming languages / tags.
+- **🔀 Flexible View Modes**:
+  - **Showcase View**: Editorial alternating layout highlighting top projects with rich details.
+  - **Grid View**: Compact, responsive modern card grid.
+- **🛡️ Resilient Caching & Offline Fallback**:
+  - Uses `localStorage` client-side caching to load instantly.
+  - Seamlessly falls back to a curated offline dataset if GitHub API rate limits or network issues occur.
+- **🎨 3D Interactive Visuals**:
+  - High-performance interactive 3D distorted sphere canvas powered by `@react-three/fiber` and `@react-three/drei`.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, Vite, Tailwind CSS
+- **3D & Animations**: Three.js, React Three Fiber, React Three Drei, Framer Motion
+- **Icons**: Lucide React, React Icons
+- **Data Source**: GitHub REST API v3
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Install dependencies
+```bash
+npm install
+```
+
+### 2. Start development server
+```bash
+npm run dev
+```
+
+### 3. Build for production
+```bash
+npm run build
+```
