@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FileText, Trophy, GraduationCap, Users } from 'lucide-react';
-import profileImg from '../assets/por.jpeg';
+import sihImg from '../assets/sih-photo.jpg';
 
 const About = () => {
   return (
@@ -54,6 +54,9 @@ const About = () => {
                 <span>Get In Touch</span>
                 <FileText size={16} />
               </a>
+              <a href="/resume.docx" className="btn-panda ml-4" download>
+                <span>Download Resume (DOCX)</span>
+              </a>
             </div>
           </motion.div>
 
@@ -71,9 +74,9 @@ const About = () => {
 
             <div className="relative w-[280px] sm:w-[320px] aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-10 bg-[#0e0e14]">
               <img
-                src={profileImg}
+                src={sihImg}
                 alt="Ojashva Bhikonde"
-                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#030308] via-transparent to-transparent opacity-80"></div>
             </div>

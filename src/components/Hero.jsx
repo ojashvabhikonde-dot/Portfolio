@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { ArrowRight, FileText } from 'lucide-react';
-import profileImg from '../assets/por.jpeg';
+import { ArrowRight, FileText, Moon, Sun } from 'lucide-react';
+import heroPersonImg from '../assets/hero-person.jpg';
+import heroLightImg from '../assets/hero-light.jpg';
 
 const Hero = () => {
   return (
@@ -70,9 +71,9 @@ const Hero = () => {
             <div className="blob-animate w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] opacity-70"></div>
 
             {/* Profile image container with bottom shadow fade */}
-            <div className="relative w-[240px] sm:w-[280px] xl:w-[310px] aspect-[4/5] rounded-[3rem] overflow-hidden z-10 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.85)] bg-[#0e0e14]">
+            <div className="relative w-[350px] sm:w-[420px] xl:w-[500px] aspect-[4/5] rounded-[3rem] overflow-hidden z-10 border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.85)] bg-[#0e0e14]">
               <img
-                src={profileImg}
+                src={heroPersonImg}
                 alt="Ojashva Bhikonde"
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
