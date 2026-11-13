@@ -1,0 +1,23 @@
+# Allow all search engines and AI web crawlers to index the portfolio
+User-agent: *
+Allow: /
+
+# Specifically welcome Google, Bing, and AI Search Engines (Perplexity, GPTBot, ClaudeBot, etc.)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Link to XML sitemap
+Sitemap: https://portfolio-ojashva.vercel.app/sitemap.xml
+
